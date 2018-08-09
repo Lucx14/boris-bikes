@@ -1,6 +1,7 @@
 require 'docking_station'
 
 
+
 describe DockingStation do
 
     let(:mockBike) { double :bike, :bike => "bike" }
@@ -25,7 +26,8 @@ describe DockingStation do
       end
 
       it '.dock(bike) - error when docking station is full' do
-        expect { 21.times {subject.dock(mockBike)} }.to raise_error 'Docking Station Full!!!'
+        DockingStation::DEFAULT_CAPACITY.times {subject.dock(mockBike)}
+        expect { subject.dock(mockBike) }.to raise_error 'Docking Station Full!!!'
       end
     end
 
