@@ -21,11 +21,11 @@ describe DockingStation do
       it '.release_bike - error when no bikes available' do
         expect { subject.release_bike }.to raise_error 'No bikes available'
       end
-#      it ".release_bike - error when try to release broken bike" do
-#        subject.dock(mockBike)
-#        bike = subject.release_bike
-#        expect(bike).to be_working
-#      end
+        it ".release_bike - releases working bikes" do
+          bike = Bike.new
+          subject.dock(bike)
+          expect(subject.release_bike).to be_working
+        end
     end
 
     #Nested describe block focused on the dock method
