@@ -1,4 +1,5 @@
-#Makers boris bike challenge
+Makers boris bike challenge
+---------------------------
 
 A basic program to model the docking and releasing of shared bikes
 
@@ -14,7 +15,8 @@ Technologies & Principles
 * Git / GitHub
 
 
-##Installation Instructions
+Installation Instructions
+-------------------------
 
 Clone the repository from github then change directory into it.
 
@@ -86,7 +88,8 @@ File Structure
 
 
 
-### User Stories
+User Stories
+------------
 
 ```
 
@@ -135,10 +138,3 @@ So that I can manage broken bikes and not disappoint users,
 I'd like docking stations to accept returning bikes (broken or not).
 
 ```
-
-
-
-#### To use the project:
-
-```
-clone the repo
