@@ -41,6 +41,49 @@ $ irb
 
 ```
 
+Run RSpec in the terminal to see tests passing:
+
+```
+
+Bike
+  .working? returns true
+  .report_broken - responds to method
+  .report_broken - can be reported broken
+
+DockingStation
+  initialization
+    @bikes - returns the instance variable @bikes
+    @capacity - has a readable default capacity
+  #release_bike
+    .release_bike - does it create a bike object
+    .release_bike - error when no bikes available
+    .release_bike - releases working bikes
+    .release_bike - does not release broken bikes
+  #dock(bike)
+    .dock(bike) returns a bike object in an array
+    .dock(bike) - error when docking station is full
+
+Finished in 0.0142 seconds (files took 0.08095 seconds to load)
+11 examples, 0 failures
+
+```
+
+
+File Structure
+
+```
+.
+├── README.md
+├── lib
+│   ├── bike.rb
+│   └── docking_station.rb
+└── spec
+    ├── bike_spec.rb
+    ├── docking_station_spec.rb
+    └── spec_helper.rb
+
+```
+
 
 
 ### User Stories
