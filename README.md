@@ -19,7 +19,7 @@ Technologies & Principles
 Clone the repository from github then change directory into it.
 
 ```
-$ git clone git@github.com:michaellennox/boris-bikes.git
+$ git clone git@github.com:Lucx14/boris-bikes
 $ cd boris-bikes
 ```
 
@@ -38,10 +38,7 @@ $ irb
  => true
 2.2.3 :002 > load './lib/docking_station.rb'
  => true
-2.2.3 :003 > load './lib/garage.rb'
- => true
-2.2.3 :004 > load './lib/van.rb'
- => true
+
 ```
 
 
